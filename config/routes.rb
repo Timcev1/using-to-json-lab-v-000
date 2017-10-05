@@ -3,7 +3,4 @@ Rails.application.routes.draw do
   resources :orders
   resources :invoices
   resources :products, only: [:show, :index, :new, :create]
-  get '/products/:id/description', to: 'products#show'
-  get '/products/:id/inventory', to: 'products#show'
-  get '/products/:id/data', to: 'products#show'
 end
